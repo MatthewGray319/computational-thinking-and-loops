@@ -19,6 +19,26 @@ namespace template_csharp_computational_thinking
             Console.WriteLine("ARE THESE INTEGERS EQUAL?\n");
 
             // Enter your solution here
+            Console.WriteLine("Enter your first number.")
+            var UserInput=Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Enter your second number.")
+            var UserInput2=Int32.Parse(Console.ReadLine());
+            if (UserInput1=UserInput2)
+            {
+                Console.WriteLine("The numbers");
+                Console.WriteLine(UserInput);
+                Console.WriteLine("and");
+                Console.WriteLine(UserInput1);
+                Console.WriteLine("are the same number");
+            }
+            else
+            Console.WriteLine("The numbers");
+            Console.WriteLine(UserInput);
+            Console.WriteLine("and");
+            Console.WriteLine(UserInput1);
+            Console.WriteLine("are not equal to each other");
+
+
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
