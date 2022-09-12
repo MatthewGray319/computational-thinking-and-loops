@@ -19,25 +19,19 @@ namespace template_csharp_computational_thinking
             Console.WriteLine("ARE THESE INTEGERS EQUAL?\n");
 
             // Enter your solution here
-            Console.WriteLine("Enter your first number.")
-            var UserInput=Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Enter your second number.")
-            var UserInput2=Int32.Parse(Console.ReadLine());
-            if (UserInput1==UserInput2)
+            Console.WriteLine("Enter your first number.");
+            var UserInput1_1=Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Enter your second number.");
+            var UserInput1_2=Int32.Parse(Console.ReadLine());
+            if (UserInput1_1 == UserInput1_2)
             {
-                Console.Write("The numbers ");
-                Console.Write(UserInput);
-                Console.Write(" and ");
-                Console.Write(UserInput1);
-                Console.Write(" are the same number");
+                Console.WriteLine("The numbers " + UserInput1_1 + " and " + UserInput1_2 + " are the same number");
+
             }
             else
-            Console.Write("The numbers ");
-            Console.WriteLine(UserInput);
-            Console.WriteLine(" and ");
-            Console.WriteLine(UserInput1);
-            Console.Write(" are not equal to each other");
-
+            {
+                Console.WriteLine("The numbers " + UserInput1_1 + " and " + UserInput1_2 + " are not equal to each other");
+            }
 
 
             Console.Write("Press enter to return to the Main Menu");
@@ -53,17 +47,15 @@ namespace template_csharp_computational_thinking
             Console.WriteLine("EVEN OR ODD?\n");
 
             // Enter your solution here
-            Console.WriteLine("Please enter a number.")
+            Console.WriteLine("Please enter a number.");
             var UserInput2_1 = Int32.Parse(Console.ReadLine());
-            if (UserInput2_1 %== 0)
+            if (UserInput2_1 % 2 == 0)
             {
-                Console.Write(UserInput2_1);
-                Console.Write(" is an even number");
+                Console.WriteLine(UserInput2_1 + " is an even number");
             }
             else
             {
-                Console.Write(UserInput2_1);
-                Console.WriteLine(" is an odd number");
+                Console.WriteLine(UserInput2_1 + " is an odd number");
             }
 
             Console.Write("Press enter to return to the Main Menu");
@@ -86,33 +78,35 @@ namespace template_csharp_computational_thinking
                 case "a":
                     Console.Write("That letter ");
                     Console.Write(UserInput3_1);
-                    Console.Write(" is a vowel";
+                    Console.Write(" is a vowel");
                     break;
                 case "e":
                     Console.Write("That letter ");
                     Console.Write(UserInput3_1);
-                    Console.Write(" is a vowel";
+                    Console.Write(" is a vowel");
                     break;
                 case "i":
                     Console.Write("That letter ");
                     Console.Write(UserInput3_1);
-                    Console.Write(" is a vowel";
+                    Console.Write(" is a vowel");
                     break;
                 case "o":
                     Console.Write("That letter ");
                     Console.Write(UserInput3_1);
-                    Console.Write(" is a vowel";
+                    Console.Write(" is a vowel");
                     break;
                 case "u":
                     Console.Write("That letter ");
                     Console.Write(UserInput3_1);
-                    Console.Write(" is a vowel";
+                    Console.Write(" is a vowel");
                     break;
                 default:
                     Console.Write("The letter ");
                     Console.Write(UserInput3_1);
-                    Console.Write(" is a consonant";
+                    Console.Write(" is a consonant");
+                    break;
             }
+            Console.WriteLine(" ");
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
@@ -127,21 +121,28 @@ namespace template_csharp_computational_thinking
             Console.WriteLine("FIND THE LARGEST NUMBER\n");
 
             // Enter your solution here
-            Console.WriteLine("Enter your first number.")
+            Console.WriteLine("Enter your first number.");
             var UserInput4_1 = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Enter your second number.")
+            Console.WriteLine("Enter your second number.");
             var UserInput4_2 = Int32.Parse(Console.ReadLine());
-            if (UserInput4_1 > UserInput4_2) 
+            Console.WriteLine("Enter your third number.");
+            var UserInput4_3 = Int32.Parse(Console.ReadLine());
+            if (UserInput4_1 > UserInput4_2 && UserInput4_1 > UserInput4_3) 
             {
                 Console.Write(UserInput4_1);
                 Console.Write(" is the larger number");
             }
-            else if (UserInput4_1 < UserInput4_2)
+            else if (UserInput4_2 > UserInput4_1 && UserInput4_2 > UserInput4_3)
             {
                 Console.Write(UserInput4_2);
                 Console.Write(" is the larger number");
             }
-
+            else if (UserInput4_3 > UserInput4_1 && UserInput4_3 > UserInput4_2)
+            {
+                Console.Write(UserInput4_3);
+                Console.Write(" is the larger number");
+            }
+            Console.WriteLine();
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
@@ -155,7 +156,7 @@ namespace template_csharp_computational_thinking
             Console.WriteLine("DIVISIBLE BY 3\n");
 
             // Enter your solution here
-            Console.WriteLine("Please enter a number.")
+            Console.WriteLine("Please enter a number.");
             var UserInput5 = Int32.Parse(Console.ReadLine());
             if (UserInput5 % 3 == 0) 
             {
@@ -180,43 +181,43 @@ namespace template_csharp_computational_thinking
             Console.WriteLine("WORDS TO DIGITS\n");
 
             // Enter your solution here
-            Console.WriteLine("Please enter the string representation of a number from 0 to 10.")
+            Console.WriteLine("Please enter the string representation of a number from 0 to 10.");
             string UserInput6;
             UserInput6 = Console.ReadLine();
             switch (UserInput6)
             {
                 case "zero":
-                    ConsoleWriteLine(0);
+                    Console.WriteLine(0);
                 break;
                 case "one":
-                    ConsoleWriteLine(1);
+                    Console.WriteLine(1);
                 break;
                 case "two":
-                    ConsoleWriteLine(2);
+                    Console.WriteLine(2);
                 break;
                 case "three":
-                    ConsoleWriteLine(3);
+                    Console.WriteLine(3);
                 break;
                 case "four":
-                    ConsoleWriteLine(4);
+                    Console.WriteLine(4);
                 break;
                 case "five":
-                    ConsoleWriteLine(5);
+                    Console.WriteLine(5);
                 break;
                 case "six":
-                    ConsoleWriteLine(6);
+                    Console.WriteLine(6);
                 break;
                 case "seven":
-                    ConsoleWriteLine(7);
+                    Console.WriteLine(7);
                 break;
                 case "eight":
-                    ConsoleWriteLine(8);
+                    Console.WriteLine(8);
                 break;
                 case "nine":
-                    ConsoleWriteLine(9);
+                    Console.WriteLine(9);
                 break;
                 case "ten":
-                    ConsoleWriteLine(10);
+                    Console.WriteLine(10);
                 break;
                 default:
                     Console.WriteLine("That is not a number from 0 to 10");
@@ -244,23 +245,23 @@ namespace template_csharp_computational_thinking
             Console.WriteLine("WHICH NAME IS LONGER?\n");
 
             // Enter your solution here
-            Console.WriteLine("Please enter your first name.")
+            Console.WriteLine("Please enter your first name.");
             var UserInput7_1 = Console.ReadLine();
-            Console.WriteLine("Please enter your last name.")
-            var UserInput7_2 = (Console.ReadLine();
-            Console.Write(UserInput7_1 + UserInput7_2);
-            if (UserInput7_1 > UserInput7_2)
+            Console.WriteLine("Please enter your last name.");
+            var UserInput7_2 = (Console.ReadLine());
+            Console.Write(UserInput7_1 + " " + UserInput7_2 + ".");
+            if (UserInput7_1.Length > UserInput7_2.Length)
             {
-                Console.WriteLine("First is longer.");
+                Console.WriteLine(" First is longer.");
             }
-            else if (UserInput7_1 == UserInput7_2)
-                {
-                Console.WriteLine("Same-sies!")
-                }
-                else if (UserInput7_1 < UserInput7_2)
-                {
-                Console.WriteLine("Last must be longer!");
-                }
+            else if (UserInput7_1.Length == UserInput7_2.Length)
+            {
+                Console.WriteLine(" Same-sies!");
+             }
+             else if (UserInput7_1.Length < UserInput7_2.Length)
+             {
+             Console.WriteLine(" Last must be longer!");
+             }
 
 
             Console.Write("Press enter to return to the Main Menu");
@@ -278,12 +279,25 @@ namespace template_csharp_computational_thinking
             Console.WriteLine("ARE THESE NAMES THE SAME?\n");
 
             // Enter your solution here
-            Console.WriteLine("Please enter a name.")
+            Console.WriteLine("Please enter a name.");
             var UserInput8_1 = Console.ReadLine();
-            Console.WriteLine("Please enter another name.")
-            var UserInput8_2 = (Console.ReadLine();
+            Console.WriteLine("Please enter another name.");
+            var UserInput8_2 = Console.ReadLine();
 
             if (UserInput8_1 == UserInput8_2)
+            {
+                Console.WriteLine("The names are the same.");
+            }
+            else
+            {
+                Console.WriteLine("The names are different.");
+            }
+            Console.WriteLine();
+            Console.WriteLine("Please enter a name.");
+            var UserInput8_3 = Console.ReadLine();
+            Console.WriteLine("Please enter another name.");
+            var UserInput8_4 = Console.ReadLine();
+            if(string.Equals(UserInput8_3, UserInput8_4))
             {
                 Console.WriteLine("The names are the same.");
             }
@@ -305,15 +319,15 @@ namespace template_csharp_computational_thinking
             Console.WriteLine("NAME AND PLACE OF BIRTH\n");
 
             // Enter your solution here
-            Console.WriteLine("Please enter your first name.")
+            Console.WriteLine("Please enter your first name.");
             var UserInput9_1 = Console.ReadLine();
-            Console.WriteLine("Please enter your place of birth.")
+            Console.WriteLine("Please enter your place of birth.");
             var UserInput9_2 = Console.ReadLine();
             Console.Write("Hi ");
             Console.Write(UserInput9_1);
             Console.Write("! You were born in ");
             Console.Write(UserInput9_2);
-
+            Console.WriteLine();
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
@@ -333,16 +347,17 @@ namespace template_csharp_computational_thinking
 
             // SOLUTION HERE
 
-            int(UserInput10);
-            Console.WriteLine("Please enter a number from 1 - 20.")
+            int UserInput10;
+            Console.WriteLine("Please enter a number from 1 - 20.");
             UserInput10 = Int32.Parse(Console.ReadLine());
-            i = 0;
+            var i = 0;
             while (i <= UserInput10)
             {
                 Console.Write(UserInput10 - i);
+                Console.Write(" ");
                 i++;
             }
-
+            Console.WriteLine();
 
 
 
@@ -374,6 +389,7 @@ namespace template_csharp_computational_thinking
                 }
                 j++;
             }
+            Console.WriteLine();
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
@@ -394,12 +410,11 @@ namespace template_csharp_computational_thinking
             // This reads the user's input and converts it to an integer.
             // We'll assume that users can only input integers.
             // SOLUTION HERE
-            Console.WriteLine("Please enter an integer.")
-            var UserInput11 = Int32.Parse(Console.ReadLine());
-            while (UserInput11 % 3 != 0)
+
+            while (userInput % 3 != 0)
             {
                 Console.WriteLine("Try again.");
-                UserInput11 = Int32.Parse(Console.ReadLine();
+                userInput = Int32.Parse(Console.ReadLine());
             }
             Console.WriteLine("You Won!");
 
