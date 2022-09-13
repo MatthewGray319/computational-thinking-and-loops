@@ -127,17 +127,17 @@ namespace template_csharp_computational_thinking
             var UserInput4_2 = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Enter your third number.");
             var UserInput4_3 = Int32.Parse(Console.ReadLine());
-            if (UserInput4_1 > UserInput4_2 && UserInput4_1 > UserInput4_3) 
+            if (UserInput4_1 >= UserInput4_2 && UserInput4_1 >= UserInput4_3) 
             {
                 Console.Write(UserInput4_1);
                 Console.Write(" is the larger number");
             }
-            else if (UserInput4_2 > UserInput4_1 && UserInput4_2 > UserInput4_3)
+            else if (UserInput4_2 >= UserInput4_1 && UserInput4_2 >= UserInput4_3)
             {
                 Console.Write(UserInput4_2);
                 Console.Write(" is the larger number");
             }
-            else if (UserInput4_3 > UserInput4_1 && UserInput4_3 > UserInput4_2)
+            else if (UserInput4_3 >= UserInput4_1 && UserInput4_3 >= UserInput4_2)
             {
                 Console.Write(UserInput4_3);
                 Console.Write(" is the larger number");
