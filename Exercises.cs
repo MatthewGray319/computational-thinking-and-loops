@@ -323,11 +323,7 @@ namespace template_csharp_computational_thinking
             var UserInput9_1 = Console.ReadLine();
             Console.WriteLine("Please enter your place of birth.");
             var UserInput9_2 = Console.ReadLine();
-            Console.Write("Hi ");
-            Console.Write(UserInput9_1);
-            Console.Write("! You were born in ");
-            Console.Write(UserInput9_2);
-            Console.WriteLine();
+            Console.WriteLine("Hi " + UserInput9_1 + "! You were born in " + UserInput9_2 + ".");
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
@@ -351,7 +347,7 @@ namespace template_csharp_computational_thinking
             Console.WriteLine("Please enter a number from 1 - 20.");
             UserInput10 = Int32.Parse(Console.ReadLine());
             var i = 0;
-            while (i <= UserInput10)
+            while (i <= UserInput10 - 1)
             {
                 Console.Write(UserInput10 - i);
                 Console.Write(" ");
